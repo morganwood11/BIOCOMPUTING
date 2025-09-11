@@ -1,4 +1,4 @@
-morganwood@Morgans-MacBook-Air desktop % cd biocomputing
+≈morganwood@Morgans-MacBook-Air desktop % cd biocomputing
 morganwood@Morgans-MacBook-Air biocomputing % ls
 BIOCOMPUTING
 morganwood@Morgans-MacBook-Air biocomputing % cd BIOCOMPUTING
