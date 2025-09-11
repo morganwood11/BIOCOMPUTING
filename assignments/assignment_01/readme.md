@@ -22,10 +22,14 @@ cd BIOCOMPUTING
 cd assignments
 mkdir assignment_1
 cd assignment_1
-mkdir data scripts results docs config logs assignment_1_essay.md README.md
+mkdir data scripts results docs config logs
+touch  assignment_1_essay.md README.md
 cd data
 mkdir raw clean
-touch ./data/raw/raw.fastq ./data/clean/clean.fastq
+touch ./raw/raw.fastq ./clean/clean.fastq
 cd ..
-touch ./scripts/sctip.sh ./logs/logfile.log ./results/example.sam ./docs/example.txt ./config/examp$
+touch ./scripts/script.sh ./logs/logfile.log ./results/example.sam ./docs/example.txt ./config/examp$
 touch README.md
+
+# updated based on assignment comments after grading 
+
