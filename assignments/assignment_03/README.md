@@ -25,9 +25,8 @@ grep -v "^>" GCF_000001735.4_TAIR10.1_genomic.fna | wc -l
 #What is the total number of nucleotides? (119,668,634)
 grep -v "^>" GCF_000001735.4_TAIR10.1_genomic.fna | tr -d "\n" | wc -m
 
-#How many total lines are in the file? (1,495,867) 
-awk '/^>/ {print; next} {print $0 | "fold -w80"}' GCF_000001735.4_TAIR10.1_genomic.fna > reformatted_80wrap.fna
-wc -l reformatted_80wrap.fna 	#kept getting 14 total lines because each sequence existed on one line 
+#How many total lines are in the file? (14)
+wc -l GCF_000001735.4_TAIR10.1_genomic.fna
 
 #How many header lines contain the word "mitochondrion"? (1) 
 grep -owi "mitochondrion" GCF_000001735.4_TAIR10.1_genomic.fna | wc -l
@@ -64,15 +63,16 @@ echo "My overall approach was to try to utilize the commands and processes we
 learned in class so that I could better understand what we have discussed 
 so far. I learned that you can combine a bunch of the same commands 
 numerous ways and it allow you to perform so many different functions 
-and learn so much about one file. Some of the tools that surprised me was 
-sed and awk, mainly because we have not really talked about them much. 
+and learn so much about one file. One of the tools that surprised me was 
+sed, mainly because we have not really talked about them much. 
 I thought sed was pretty useful and was glad I used it for a couple 
-of the questions. I only decided to use awk because the normal commands
-we have gone over to figure out number of lines was consistently giving
-me 14 lines. I believe this was because each sequence was being 
-evaluated as all on one line, so it was consistently wrong and I had to 
-change the wrapping of each line so it would produce the correct answer.
-That was the most frustrating part of the commands and methods I used. 
+of the questions. I think my main hold up was just understanding conceptually 
+what it does because I think the streams still confuse me a little bit. This 
+obviously can be fixed by me working more with it and learning the different 
+flags associated, but I think that was my main hold up with this assignment. 
+Otherwise, I think I was only struggling with how to combine different commands 
+to perform the functions I wanted.Overall though, that  was the only frustrating
+ part of the commands and methods I used. 
 As far as computational biology, many of these skills are critical for 
 being able to break down sequence files, search via primers or specific
 sections of sequences, cutting where we know certain genes are, etc. We 
