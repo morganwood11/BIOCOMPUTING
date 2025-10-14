@@ -1,0 +1,13 @@
+#Summary
+#Generated on	Tue Oct 07 10:47:52 EDT 2025
+#Version	5
+chroms	1
+bases	4574953
+defined	4558953
+undefined	16000
+contigs	1
+scaffolds	1
+interpad	300
+source	/sciclone/home/mrwood01/BIOCOMPUTING/lessons/lesson_06/data/ecoli_bl21de3.fasta
+bytes	4624141
+last modified	1750795288000
