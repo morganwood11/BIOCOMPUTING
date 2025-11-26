@@ -1,0 +1,67 @@
+error    libmamba Could not open lockfile '/sciclone/apps/miniforge3-24.9.2-0/pkgs/cache/cache.lock'
+error    libmamba Removing lock file '/sciclone/apps/miniforge3-24.9.2-0/pkgs/cache/cache.lock' failed
+    You may need to remove it manually
+error    libmamba Could not open lockfile '/sciclone/apps/miniforge3-24.9.2-0/pkgs/cache/cache.lock'
+error    libmamba Removing lock file '/sciclone/apps/miniforge3-24.9.2-0/pkgs/cache/cache.lock' failed
+    You may need to remove it manually
+Building a SMALL index
+Renaming /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/contigs/ERR10880494/contigs.fasta.3.bt2.tmp to /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/contigs/ERR10880494/contigs.fasta.3.bt2
+Renaming /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/contigs/ERR10880494/contigs.fasta.4.bt2.tmp to /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/contigs/ERR10880494/contigs.fasta.4.bt2
+Renaming /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/contigs/ERR10880494/contigs.fasta.1.bt2.tmp to /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/contigs/ERR10880494/contigs.fasta.1.bt2
+Renaming /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/contigs/ERR10880494/contigs.fasta.2.bt2.tmp to /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/contigs/ERR10880494/contigs.fasta.2.bt2
+Renaming /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/contigs/ERR10880494/contigs.fasta.rev.1.bt2.tmp to /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/contigs/ERR10880494/contigs.fasta.rev.1.bt2
+Renaming /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/contigs/ERR10880494/contigs.fasta.rev.2.bt2.tmp to /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/contigs/ERR10880494/contigs.fasta.rev.2.bt2
+[bam_sort_core] merging from 1 files and 8 in-memory blocks...
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.1.1
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           ERR10880494.bam                                  ||
+||                                                                            ||
+||             Output file : ERR10880494_gene_counts.txt                      ||
+||                 Summary : ERR10880494_gene_counts.txt.summary              ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : no                                               ||
+||              Annotation : ERR10880494.gff (GTF)                            ||
+||      Dir for temp files : /sciclone/home/mrwood01/scr10/BIOCOMPUTING/l ... ||
+||                                                                            ||
+||                 Threads : 8                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file ERR10880494.gff ...                                   ||
+||    Features : 56635                                                        ||
+||    Meta-features : 56635                                                   ||
+||    Chromosomes/contigs : 38888                                             ||
+||                                                                            ||
+|| Process BAM file ERR10880494.bam...                                        ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 17387810                                             ||
+||    Successfully assigned alignments : 0 (0.0%)                             ||
+||    Running time : 0.06 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "/sciclone/home/mrwood01  ||
+|| /scr10/BIOCOMPUTING/lessons/lesson_08/coverm/ERR10880494_gene_counts.txt.  ||
+|| summary"                                                                   ||
+||                                                                            ||
+\\============================================================================//
+

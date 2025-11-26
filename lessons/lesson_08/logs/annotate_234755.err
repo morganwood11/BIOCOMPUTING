@@ -1,0 +1,52 @@
+[13:13:44] This is prokka 1.14.6
+[13:13:44] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[13:13:44] Homepage is https://github.com/tseemann/prokka
+[13:13:44] Local time is Sat Nov 15 13:13:44 2025
+[13:13:44] You are mrwood01
+[13:13:44] Operating system is linux
+[13:13:44] You have BioPerl 1.7.8
+Argument "1.7.8" isn't numeric in numeric lt (<) at /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/prokka line 259.
+[13:13:44] System has 20 cores.
+[13:13:44] Will use maximum of 20 cores.
+[13:13:44] Annotating as >>> Bacteria <<<
+[13:13:44] Creating new output folder: /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/annotations/ERR10880494
+[13:13:44] Running: mkdir -p \/sciclone\/home\/mrwood01\/scr10\/BIOCOMPUTING\/lessons\/lesson_08\/annotations\/ERR10880494
+[13:13:44] Using filename prefix: ERR10880494.XXX
+[13:13:44] Setting HMMER_NCPU=1
+[13:13:44] Writing log to: /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/annotations/ERR10880494/ERR10880494.log
+[13:13:44] Command: /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/prokka /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/contigs/ERR10880494/contigs.fasta --outdir /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/annotations/ERR10880494 --prefix ERR10880494 --cpus 20 --kingdom Bacteria --metagenome --locustag ERR10880494 --force
+[13:13:44] Appending to PATH: /sciclone/home/mrwood01/.conda/envs/prokka-env/bin
+[13:13:44] Looking for 'aragorn' - found /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/aragorn
+[13:13:44] Determined aragorn version is 001002 from 'ARAGORN v1.2.41 Dean Laslett'
+[13:13:44] Looking for 'barrnap' - found /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/barrnap
+[13:13:44] Determined barrnap version is 000009 from 'barrnap 0.9'
+[13:13:44] Looking for 'blastp' - found /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/blastp
+[13:13:50] Determined blastp version is 002016 from 'blastp: 2.16.0+'
+[13:13:50] Looking for 'cmpress' - found /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/cmpress
+[13:13:50] Determined cmpress version is 001001 from '# INFERNAL 1.1.5 (Sep 2023)'
+[13:13:50] Looking for 'cmscan' - found /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/cmscan
+[13:13:50] Determined cmscan version is 001001 from '# INFERNAL 1.1.5 (Sep 2023)'
+[13:13:50] Looking for 'egrep' - found /usr/bin/egrep
+[13:13:50] Looking for 'find' - found /usr/bin/find
+[13:13:50] Looking for 'grep' - found /usr/bin/grep
+[13:13:50] Looking for 'hmmpress' - found /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/hmmpress
+[13:13:50] Determined hmmpress version is 003004 from '# HMMER 3.4 (Aug 2023); http://hmmer.org/'
+[13:13:50] Looking for 'hmmscan' - found /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/hmmscan
+[13:13:50] Determined hmmscan version is 003004 from '# HMMER 3.4 (Aug 2023); http://hmmer.org/'
+[13:13:50] Looking for 'java' - found /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/java
+[13:13:50] Looking for 'makeblastdb' - found /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/makeblastdb
+[13:13:51] Determined makeblastdb version is 002016 from 'makeblastdb: 2.16.0+'
+[13:13:51] Looking for 'minced' - found /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/minced
+[13:13:52] Determined minced version is 004002 from 'minced 0.4.2'
+[13:13:52] Looking for 'parallel' - found /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/parallel
+[13:13:52] Determined parallel version is 20250822 from 'GNU parallel 20250822'
+[13:13:52] Looking for 'prodigal' - found /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/prodigal
+[13:13:52] Determined prodigal version is 002006 from 'Prodigal V2.6.3: February, 2016'
+[13:13:52] Looking for 'prokka-genbank_to_fasta_db' - found /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/prokka-genbank_to_fasta_db
+[13:13:52] Looking for 'sed' - found /usr/bin/sed
+[13:13:52] Looking for 'tbl2asn' - found /sciclone/home/mrwood01/.conda/envs/prokka-env/bin/tbl2asn
+[13:13:53] Determined tbl2asn version is 025007 from 'tbl2asn 25.7   arguments:'
+[13:13:53] Using genetic code table 11.
+[13:13:53] Loading and checking input file: /sciclone/home/mrwood01/scr10/BIOCOMPUTING/lessons/lesson_08/contigs/ERR10880494/contigs.fasta
+[13:14:06] Contig ID must <= 37 chars long: NODE_142320_length_199_cov_1210.472222
+[13:14:06] Please rename your contigs OR try '--centre X --compliant' to generate clean contig names.
