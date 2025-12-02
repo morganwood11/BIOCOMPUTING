@@ -1,7 +1,7 @@
 #### Group Project ####
 ### Morgan Wood 	11/19/2025
 
-##Step 1: set up project directory 
+## Step 1: set up project directory 
 #everything within HPC
 ```
 cd scr10/BIOCOMPUTING
@@ -50,7 +50,7 @@ SRR31654382
 #end text file
 ```
 
-##Step 2: Download data
+## Step 2: Download data
 ```
 cd ../scripts
 nano 01_download.sh
@@ -130,7 +130,7 @@ conda deactivate
 sbatch 01_download.sh
 ```
 
-##Step 3: quality control 
+## Step 3: quality control 
 ```
 nano 03_qc.sh 
 #type all below into script 
@@ -155,7 +155,7 @@ chmod +x 02_qc.sh
 bash 02_qc.sh
 ```
 
-##Step 4: assemble 
+## Step 4: assemble 
 ```
 nano 03_assemble_template.sh
 #type all below into script 
@@ -203,7 +203,7 @@ for i in $(cat ./accessions.txt); do cat ./scripts/03_assemble_template.sh | sed
 for i in ./scripts/SRR*.slurm; do sbatch ${i}; done
 ```
 
-##Step 5: annotate 
+## Step 5: annotate 
 ```
 cd scripts 	#back into scripts directory
 nano 04_annotate.sh
@@ -263,7 +263,7 @@ for i in $(cat ./accessions.txt); do cat ./scripts/04_annotate_template.sh | sed
 for i in ./scripts/*_annotate.slurm; do sbatch ${i}; done
 ```
 
-##Step 6: coverage 
+## Step 6: coverage 
 ```
 cd scripts 	#back into scripts directory 
 nano 05_coverage.sh 
@@ -405,7 +405,7 @@ done
 
 ```
 
-##set up output directory in login node to push to github 
+## set up output directory in login node to push to github 
 ```
 cd ~/BIOCOMPUTING
 mkdir group_project
@@ -414,16 +414,5 @@ mv ./output ~/BIOCOMPUTING/group_project
 cd ~/BIOCOMPUTING/group_project
 nano README.md
 ``` 
-#paste this entire document/script into README.md for github 
-
-##summary of project: 
-# This project covered metagenomics assembly and annotation of data/sequences from a gut microbiome study
-# focused on healthy aging. Each group member ran the same scripts, but changed a minimum of one thing within
-# one of the scripts. For my portion, I changed the evalue in Step 5 (04_annotate.sh) using the Prokka program. 
-# I changed the evalue to 1e-05, while the default is 1e-09. Increasing the size of the evalue essentially makes 
-# Prokka less picky when annotating the assembled genome, so it may become less accurate. Another group member 
-# changed the evalue in the opposite direction to make Prokka more accurate. Our goal for each group member changing different 
-# parts of this pipeline allows us to analyze the differences in the output files each of us get. Our main 
-# focus during analysis is the amount of annotated vs. hypothetical proteins that are present and which 
-# changes in the pipeline can elicit differences in this ratio. This project overall was super fun and nice to 
-# see how this class has come full circle and apply what we've learned to real world data.  
+## summary of project: 
+### This project covered metagenomics assembly and annotation of data/sequences from a gut microbiome study focused on healthy aging. Each group member ran the same scripts, but changed a minimum of one thing within one of the scripts. For my portion, I changed the evalue in Step 5 (04_annotate.sh) using the Prokka program. I changed the evalue to 1e-05, while the default is 1e-09. Increasing the size of the evalue essentially make Prokka less picky when annotating the assembled genome, so it may become less accurate. Another group member changed the evalue in the opposite direction to make Prokka more accurate. Our goal for each group member changes parts of this pipeline allows us to analyze the differences in the output files each of us get. Our main focus during analysis is the amount of annotated vs. hypothetical proteins that are present and which changes in the pipeline can elicit differences in this ratio. This project overall was super fun and nice to see how this class has come full circle and apply what we've learned to real world data. ###
